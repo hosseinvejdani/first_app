@@ -15,23 +15,48 @@ class _MyAppState extends State<MyApp> {
   final _questions = [
     {
       'qText': 'what is your favorite color?',
-      'qAns': ['blue', 'green', 'red', 'black'],
+      'qAns': [
+        {'ansText': 'blue', 'ansScore': 7},
+        {'ansText': 'green', 'ansScore': 3},
+        {'ansText': 'red', 'ansScore': 6},
+        {'ansText': 'black', 'ansScore': 10},
+      ],
     },
     {
       'qText': 'what is your favorite Car?',
-      'qAns': ['Benz', 'BMW', 'Tesla', 'Suzuki'],
+      'qAns': [
+        {'ansText': 'Benz', 'ansScore': 7},
+        {'ansText': 'BMW', 'ansScore': 3},
+        {'ansText': 'Tesla', 'ansScore': 6},
+        {'ansText': 'Suzuki', 'ansScore': 10},
+      ]
     },
     {
       'qText': 'what is your favorite City?',
-      'qAns': ['Vancuver', 'Halifax', 'Toronto', 'Newyork'],
+      'qAns': [
+        {'ansText': 'Vancuver', 'ansScore': 7},
+        {'ansText': 'Halifax', 'ansScore': 3},
+        {'ansText': 'Toronto', 'ansScore': 6},
+        {'ansText': 'Newyork', 'ansScore': 10},
+      ]
     },
     {
       'qText': 'what is your favorite sport?',
-      'qAns': ['football', 'tenis', 'swimming', 'running'],
+      'qAns': [
+        {'ansText': 'football', 'ansScore': 7},
+        {'ansText': 'tenis', 'ansScore': 3},
+        {'ansText': 'swimming', 'ansScore': 6},
+        {'ansText': 'running', 'ansScore': 10},
+      ]
     }
   ];
 
-  void _chooseOption() {
+  // ignore: unused_field
+  var _totalScore = 0;
+
+  void _chooseOption(int score) {
+    _totalScore += score;
+
     setState(() {
       _qindex = _qindex + 1;
     });
@@ -51,7 +76,7 @@ class _MyAppState extends State<MyApp> {
                 questions: _questions,
                 qindex: _qindex,
               )
-            : Result(),
+            : Result(totalScore: _totalScore),
       ),
     );
   }
