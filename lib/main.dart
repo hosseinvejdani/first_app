@@ -16,37 +16,37 @@ class _MyAppState extends State<MyApp> {
     {
       'qText': 'what is your favorite color?',
       'qAns': [
-        {'ansText': 'blue', 'ansScore': 7},
+        {'ansText': 'blue', 'ansScore': 4},
         {'ansText': 'green', 'ansScore': 3},
-        {'ansText': 'red', 'ansScore': 6},
-        {'ansText': 'black', 'ansScore': 10},
+        {'ansText': 'red', 'ansScore': 2},
+        {'ansText': 'black', 'ansScore': 1},
       ],
     },
     {
       'qText': 'what is your favorite Car?',
       'qAns': [
-        {'ansText': 'Benz', 'ansScore': 7},
+        {'ansText': 'Benz', 'ansScore': 4},
         {'ansText': 'BMW', 'ansScore': 3},
-        {'ansText': 'Tesla', 'ansScore': 6},
-        {'ansText': 'Suzuki', 'ansScore': 10},
+        {'ansText': 'Tesla', 'ansScore': 2},
+        {'ansText': 'Suzuki', 'ansScore': 1},
       ]
     },
     {
       'qText': 'what is your favorite City?',
       'qAns': [
-        {'ansText': 'Vancuver', 'ansScore': 7},
+        {'ansText': 'Vancuver', 'ansScore': 4},
         {'ansText': 'Halifax', 'ansScore': 3},
-        {'ansText': 'Toronto', 'ansScore': 6},
-        {'ansText': 'Newyork', 'ansScore': 10},
+        {'ansText': 'Toronto', 'ansScore': 2},
+        {'ansText': 'Newyork', 'ansScore': 1},
       ]
     },
     {
       'qText': 'what is your favorite sport?',
       'qAns': [
-        {'ansText': 'football', 'ansScore': 7},
+        {'ansText': 'football', 'ansScore': 4},
         {'ansText': 'tenis', 'ansScore': 3},
-        {'ansText': 'swimming', 'ansScore': 6},
-        {'ansText': 'running', 'ansScore': 10},
+        {'ansText': 'swimming', 'ansScore': 2},
+        {'ansText': 'running', 'ansScore': 1},
       ]
     }
   ];
