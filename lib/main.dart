@@ -54,6 +54,13 @@ class _MyAppState extends State<MyApp> {
   // ignore: unused_field
   var _totalScore = 0;
 
+  void _resetQuiz() {
+    setState(() {
+      _qindex = 0;
+      _totalScore = 0;
+    });
+  }
+
   void _chooseOption(int score) {
     _totalScore += score;
 
@@ -76,7 +83,7 @@ class _MyAppState extends State<MyApp> {
                 questions: _questions,
                 qindex: _qindex,
               )
-            : Result(totalScore: _totalScore),
+            : Result(totalScore: _totalScore, resetHandler: _resetQuiz),
       ),
     );
   }
