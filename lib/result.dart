@@ -38,13 +38,18 @@ class Result extends StatelessWidget {
           height: 30,
         ),
         ElevatedButton(
-            onPressed: resetHandler,
-            child: Text(
-              'reset Quiz!',
-              style: TextStyle(
-                fontSize: 25,
-              ),
-            ))
+          onPressed: resetHandler,
+          // style: ButtonStyle(
+          //     backgroundColor: MaterialStateProperty.all(Colors.amber)),
+          style: ElevatedButton.styleFrom(
+              primary: Colors.amber, onPrimary: Colors.white),
+          child: Text(
+            'reset Quiz!',
+            style: TextStyle(
+              fontSize: 25,
+            ),
+          ),
+        ),
       ],
     );
   }
